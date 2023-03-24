@@ -33,6 +33,7 @@ public class MenuOpcoes extends JPanel {
       lblSaudacao.setBounds (350, 145, 200, 45);
       
       
+   
       
       //Muda de tela para cadastrar
       btnCadastrar.addActionListener(new ActionListener() {
@@ -61,7 +62,7 @@ public class MenuOpcoes extends JPanel {
 
 
   public static void main (String[] args) {
-      JFrame frame = new JFrame ("MyPanel");
+      JFrame frame = new JFrame ("Menu de Opções");
       frame.setDefaultCloseOperation (JFrame.EXIT_ON_CLOSE);
       frame.getContentPane().add (new MenuOpcoes());
       frame.pack();

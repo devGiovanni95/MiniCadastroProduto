@@ -23,7 +23,7 @@ private JButton btnConsultar;
   private JTextField tfPreco;
   private JTextField tfEstoque;
   private JButton btnVoltar;
-  Produto produto = new Produto();
+  private Produto produto = new Produto();
   
 
   public InterfaceConsultar() {
@@ -96,7 +96,6 @@ private JButton btnConsultar;
 						String descricao = produto1.getDescricao();
 						String preco = "" + produto1.getValor();
 						String quantidade = "" + produto1.getQuantidadeEstoque();		
-						produto.ler(idPesquisa);
 						tfDescricao.setText(descricao);
 						tfPreco.setText(preco);
 						tfEstoque.setText(quantidade);

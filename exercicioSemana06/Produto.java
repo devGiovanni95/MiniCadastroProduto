@@ -20,6 +20,10 @@ public class Produto implements Serializable{
 	}
 
 	
+	/**
+	 * Metodo que efetua a gravação do objeto. 
+	 * @return - Retorna uma mensagem identificando se a gravação deu certo ou não.
+	 */
 	public String gravar() {
 		try {
 			FileOutputStream fileOutputStream = new FileOutputStream(new File(codigo+".obj"));
@@ -32,6 +36,11 @@ public class Produto implements Serializable{
 		}
 	}
 
+	/**
+	 * Método que le um objeto criado a partir de um paramentro.
+	 * @param codigo - código a utilizado para efetuar a pesquisa.
+	 * @return - o objeto procurado, caso não haja ele retorna nulo.
+	 */
 	public Produto ler(int codigo) {
 		try {
 			FileInputStream inputStream = new FileInputStream(new File(codigo+".obj"));
